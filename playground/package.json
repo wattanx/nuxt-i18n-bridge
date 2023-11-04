@@ -1,0 +1,17 @@
+{
+  "name": "playground",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "nuxi build",
+    "dev": "nuxi dev",
+    "generate": "nuxi generate",
+    "start": "node .output/server/index.mjs"
+  },
+  "devDependencies": {
+    "@nuxt/bridge": "3.0.0-rc.2",
+    "@nuxt/bridge-schema": "3.0.0-rc.2",
+    "nuxi": "3.8.4",
+    "nuxt": "2.17.1"
+  }
+}
