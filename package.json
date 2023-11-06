@@ -1,7 +1,6 @@
 {
   "name": "@wattanx/nuxt-i18n-bridge",
-  "version": "0.0.0",
-  "private": true,
+  "version": "0.0.1",
   "repository": "https://github.com/wattanx/nuxt-i18n-bridge",
   "license": "MIT",
   "exports": {
