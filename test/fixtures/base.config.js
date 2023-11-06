@@ -31,23 +31,6 @@ const config = {
     defaultLocale: "en",
     lazy: false,
     vueI18nLoader: true,
-    vueI18n: {
-      messages: {
-        fr: {
-          home: "Accueil",
-          about: "À propos",
-          posts: "Articles",
-          dynamic: "Dynamique",
-        },
-        en: {
-          home: "Homepage",
-          about: "About us",
-          posts: "Posts",
-          dynamic: "Dynamic",
-        },
-      },
-      fallbackLocale: "en",
-    },
   },
 };
 
