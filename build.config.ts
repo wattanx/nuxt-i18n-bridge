@@ -10,4 +10,5 @@ export default defineBuildConfig({
       declaration: true,
     },
   ],
+  dependencies: ["vue-i18n-bridge"],
 });
