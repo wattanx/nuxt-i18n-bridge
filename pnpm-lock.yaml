@@ -55,8 +55,8 @@ importers:
         specifier: 3.10.0
         version: 3.10.0(@vitest/ui@1.2.2)(h3@1.10.1)(jsdom@24.0.0)(rollup@3.29.4)(vite@5.0.12)(vitest@1.2.2)(vue-router@3.6.5)(vue@2.7.16)
       '@types/node':
-        specifier: ^20.11.8
-        version: 20.11.8
+        specifier: ^20.11.10
+        version: 20.11.10
       '@vitejs/plugin-vue2':
         specifier: ^2.3.1
         version: 2.3.1(vite@5.0.12)(vue@2.7.16)
@@ -77,7 +77,7 @@ importers:
         version: 2.0.0(typescript@5.3.3)
       vitest:
         specifier: 1.2.2
-        version: 1.2.2(@types/node@20.11.8)(@vitest/ui@1.2.2)(jsdom@24.0.0)
+        version: 1.2.2(@types/node@20.11.10)(@vitest/ui@1.2.2)(jsdom@24.0.0)
       vue:
         specifier: 2.7.16
         version: 2.7.16
@@ -89,7 +89,7 @@ importers:
     devDependencies:
       '@nuxt/bridge':
         specifier: 3.0.1
-        version: 3.0.1(@babel/core@7.23.9)(@types/node@20.11.8)(esbuild@0.19.12)(rollup@3.29.4)(typescript@5.3.3)(vue@2.7.16)(webpack@5.90.0)
+        version: 3.0.1(@babel/core@7.23.9)(@types/node@20.11.10)(esbuild@0.19.12)(rollup@3.29.4)(typescript@5.3.3)(vue@2.7.16)(webpack@5.90.0)
       '@nuxt/bridge-schema':
         specifier: 3.0.1
         version: 3.0.1(rollup@3.29.4)(typescript@5.3.3)
@@ -2780,7 +2780,7 @@ packages:
       - typescript
     dev: true
 
-  /@nuxt/bridge@3.0.1(@babel/core@7.23.9)(@types/node@20.11.8)(esbuild@0.19.12)(rollup@3.29.4)(typescript@5.3.3)(vue@2.7.16)(webpack@5.90.0):
+  /@nuxt/bridge@3.0.1(@babel/core@7.23.9)(@types/node@20.11.10)(esbuild@0.19.12)(rollup@3.29.4)(typescript@5.3.3)(vue@2.7.16)(webpack@5.90.0):
     resolution: {integrity: sha512-QagBX8fPi5Gk05R/4pDizPcAOVyuRgZ7Oy2NBeBlFQLWGMe+iLUNsOJPgvYHJn7/stuWCcBVA/jt5kczRrfE3w==}
     engines: {node: ^14.16.0 || ^16.11.0 || >=17.0.0}
     hasBin: true
@@ -2838,8 +2838,8 @@ packages:
       unimport: 3.7.1(rollup@3.29.4)
       unplugin: 1.6.0
       untyped: 1.4.0
-      vite: 5.0.12(@types/node@20.11.8)(terser@5.27.0)
-      vite-node: 1.2.2(@types/node@20.11.8)(terser@5.27.0)
+      vite: 5.0.12(@types/node@20.11.10)(terser@5.27.0)
+      vite-node: 1.2.2(@types/node@20.11.10)(terser@5.27.0)
       vue-bundle-renderer: 2.0.0
     transitivePeerDependencies:
       - '@azure/app-configuration'
@@ -3346,8 +3346,8 @@ packages:
       ufo: 1.3.2
       unenv: 1.9.0
       unplugin: 1.6.0
-      vite: 5.0.12(@types/node@20.11.8)(terser@5.27.0)
-      vitest: 1.2.2(@types/node@20.11.8)(@vitest/ui@1.2.2)(jsdom@24.0.0)
+      vite: 5.0.12(@types/node@20.11.10)(terser@5.27.0)
+      vitest: 1.2.2(@types/node@20.11.10)(@vitest/ui@1.2.2)(jsdom@24.0.0)
       vitest-environment-nuxt: 1.0.0(@vitest/ui@1.2.2)(h3@1.10.1)(jsdom@24.0.0)(rollup@3.29.4)(vite@5.0.12)(vitest@1.2.2)(vue-router@3.6.5)(vue@2.7.16)
       vue: 2.7.16
       vue-router: 3.6.5(vue@2.7.16)
@@ -4130,15 +4130,15 @@ packages:
   /@types/http-proxy@1.17.14:
     resolution: {integrity: sha512-SSrD0c1OQzlFX7pGu1eXxSEjemej64aaNPRhhVYUGqXh0BtldAAx37MG8btcumvpgKyZp1F5Gn3JkktdxiFv6w==}
     dependencies:
-      '@types/node': 20.11.8
+      '@types/node': 20.11.10
     dev: true
 
   /@types/json-schema@7.0.15:
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
     dev: true
 
-  /@types/node@20.11.8:
-    resolution: {integrity: sha512-i7omyekpPTNdv4Jb/Rgqg0RU8YqLcNsI12quKSDkRXNfx7Wxdm6HhK1awT3xTgEkgxPn3bvnSpiEAc7a7Lpyow==}
+  /@types/node@20.11.10:
+    resolution: {integrity: sha512-rZEfe/hJSGYmdfX9tvcPMYeYPW2sNl50nsw4jZmRcaG0HIAb0WYEpsB05GOb53vjqpyE9GUhlDQ4jLSoB5q9kg==}
     dependencies:
       undici-types: 5.26.5
     dev: true
@@ -4172,7 +4172,7 @@ packages:
   /@types/webpack-sources@3.2.3:
     resolution: {integrity: sha512-4nZOdMwSPHZ4pTEZzSp0AsTM4K7Qmu40UKW4tJDiOVs20UzYF9l+qUe4s0ftfN0pin06n+5cWWDJXH+sbhAiDw==}
     dependencies:
-      '@types/node': 20.11.8
+      '@types/node': 20.11.10
       '@types/source-list-map': 0.1.6
       source-map: 0.7.4
     dev: true
@@ -4180,7 +4180,7 @@ packages:
   /@types/webpack@4.41.38:
     resolution: {integrity: sha512-oOW7E931XJU1mVfCnxCVgv8GLFL768pDO5u2Gzk82i8yTIgX6i7cntyZOkZYb/JtYM8252SN9bQp9tgkVDSsRw==}
     dependencies:
-      '@types/node': 20.11.8
+      '@types/node': 20.11.10
       '@types/tapable': 1.0.12
       '@types/uglify-js': 3.17.4
       '@types/webpack-sources': 3.2.3
@@ -4400,7 +4400,7 @@ packages:
       regenerator-runtime: 0.14.1
       systemjs: 6.14.3
       terser: 5.27.0
-      vite: 5.0.12(@types/node@20.11.8)(terser@5.27.0)
+      vite: 5.0.12(@types/node@20.11.10)(terser@5.27.0)
     transitivePeerDependencies:
       - esbuild
       - supports-color
@@ -4413,7 +4413,7 @@ packages:
       vite: ^3.0.0 || ^4.0.0 || ^5.0.0
       vue: ^2.7.0-0
     dependencies:
-      vite: 5.0.12(@types/node@20.11.8)(terser@5.27.0)
+      vite: 5.0.12(@types/node@20.11.10)(terser@5.27.0)
       vue: 2.7.16
     dev: true
 
@@ -4459,7 +4459,7 @@ packages:
       pathe: 1.1.2
       picocolors: 1.0.0
       sirv: 2.0.4
-      vitest: 1.2.2(@types/node@20.11.8)(@vitest/ui@1.2.2)(jsdom@24.0.0)
+      vitest: 1.2.2(@types/node@20.11.10)(@vitest/ui@1.2.2)(jsdom@24.0.0)
     dev: true
 
   /@vitest/utils@1.2.2:
@@ -8954,7 +8954,7 @@ packages:
     resolution: {integrity: sha512-KWYVV1c4i+jbMpaBC+U++4Va0cp8OisU185o73T1vo99hqi7w8tSJfUXYswwqqrjzwxa6KpRK54WhPvwf5w6PQ==}
     engines: {node: '>= 10.13.0'}
     dependencies:
-      '@types/node': 20.11.8
+      '@types/node': 20.11.10
       merge-stream: 2.0.0
       supports-color: 7.2.0
     dev: true
@@ -8963,7 +8963,7 @@ packages:
     resolution: {integrity: sha512-7vuh85V5cdDofPyxn58nrPjBktZo0u9x1g8WtjQol+jZDaE+fhN+cIvTj11GndBnMnyfrUOG1sZQxCdjKh+DKg==}
     engines: {node: '>= 10.13.0'}
     dependencies:
-      '@types/node': 20.11.8
+      '@types/node': 20.11.10
       merge-stream: 2.0.0
       supports-color: 8.1.1
     dev: true
@@ -13639,7 +13639,7 @@ packages:
     engines: {node: '>= 0.8'}
     dev: true
 
-  /vite-node@1.2.2(@types/node@20.11.8)(terser@5.27.0):
+  /vite-node@1.2.2(@types/node@20.11.10)(terser@5.27.0):
     resolution: {integrity: sha512-1as4rDTgVWJO3n1uHmUYqq7nsFgINQ9u+mRcXpjeOMJUmviqNKjcZB7UfRZrlM7MjYXMKpuWp5oGkjaFLnjawg==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -13648,7 +13648,7 @@ packages:
       debug: 4.3.4
       pathe: 1.1.2
       picocolors: 1.0.0
-      vite: 5.0.12(@types/node@20.11.8)(terser@5.27.0)
+      vite: 5.0.12(@types/node@20.11.10)(terser@5.27.0)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -13660,7 +13660,7 @@ packages:
       - terser
     dev: true
 
-  /vite@5.0.12(@types/node@20.11.8)(terser@5.27.0):
+  /vite@5.0.12(@types/node@20.11.10)(terser@5.27.0):
     resolution: {integrity: sha512-4hsnEkG3q0N4Tzf1+t6NdN9dg/L3BM+q8SWgbSPnJvrgH2kgdyzfVJwbR1ic69/4uMJJ/3dqDZZE5/WwqW8U1w==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -13688,7 +13688,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 20.11.8
+      '@types/node': 20.11.10
       esbuild: 0.19.12
       postcss: 8.4.33
       rollup: 4.9.6
@@ -13719,7 +13719,7 @@ packages:
       - vue-router
     dev: true
 
-  /vitest@1.2.2(@types/node@20.11.8)(@vitest/ui@1.2.2)(jsdom@24.0.0):
+  /vitest@1.2.2(@types/node@20.11.10)(@vitest/ui@1.2.2)(jsdom@24.0.0):
     resolution: {integrity: sha512-d5Ouvrnms3GD9USIK36KG8OZ5bEvKEkITFtnGv56HFaSlbItJuYr7hv2Lkn903+AvRAgSixiamozUVfORUekjw==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -13744,7 +13744,7 @@ packages:
       jsdom:
         optional: true
     dependencies:
-      '@types/node': 20.11.8
+      '@types/node': 20.11.10
       '@vitest/expect': 1.2.2
       '@vitest/runner': 1.2.2
       '@vitest/snapshot': 1.2.2
@@ -13765,8 +13765,8 @@ packages:
       strip-literal: 1.3.0
       tinybench: 2.6.0
       tinypool: 0.8.2
-      vite: 5.0.12(@types/node@20.11.8)(terser@5.27.0)
-      vite-node: 1.2.2(@types/node@20.11.8)(terser@5.27.0)
+      vite: 5.0.12(@types/node@20.11.10)(terser@5.27.0)
+      vite-node: 1.2.2(@types/node@20.11.10)(terser@5.27.0)
       why-is-node-running: 2.2.2
     transitivePeerDependencies:
       - less
