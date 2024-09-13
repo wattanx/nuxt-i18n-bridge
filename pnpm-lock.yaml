@@ -40,7 +40,7 @@ importers:
         version: 9.9.0(vue@2.7.16)
       vue-i18n-routing:
         specifier: ^1.2.0
-        version: 1.2.0(vue-i18n-bridge@9.9.0)(vue-i18n@8.28.2)(vue-router@3.6.5)(vue@2.7.16)
+        version: 1.2.0(vue-i18n-bridge@9.9.0)(vue-i18n@8.28.2)(vue-router@4.4.5)(vue@2.7.16)
     devDependencies:
       '@nuxt/eslint-config':
         specifier: ^0.2.0
@@ -53,7 +53,7 @@ importers:
         version: 3.9.3(rollup@3.29.4)
       '@nuxt/test-utils':
         specifier: 3.10.0
-        version: 3.10.0(@vitest/ui@1.2.2)(h3@1.10.1)(jsdom@24.0.0)(rollup@3.29.4)(vite@5.0.12)(vitest@1.2.2)(vue-router@3.6.5)(vue@2.7.16)
+        version: 3.10.0(@vitest/ui@1.2.2)(h3@1.10.1)(jsdom@24.0.0)(rollup@3.29.4)(vite@5.0.12)(vitest@1.2.2)(vue-router@4.4.5)(vue@2.7.16)
       '@types/node':
         specifier: ^20.11.10
         version: 20.11.10
@@ -82,8 +82,8 @@ importers:
         specifier: 2.7.16
         version: 2.7.16
       vue-router:
-        specifier: ^3.6.5
-        version: 3.6.5(vue@2.7.16)
+        specifier: ^4.4.5
+        version: 4.4.5(vue@2.7.16)
 
   playground:
     devDependencies:
@@ -2587,7 +2587,7 @@ packages:
       json5: 2.2.3
     dev: false
 
-  /@intlify/vue-router-bridge@1.1.0(vue-router@3.6.5)(vue@2.7.16):
+  /@intlify/vue-router-bridge@1.1.0(vue-router@4.4.5)(vue@2.7.16):
     resolution: {integrity: sha512-EX+KndT9VS3muMdZWFmc99D8nUaWTOXr322a8zNf5HnMCbpbogdifWYW8hat+nVE73St/gcDbPz6u5smVUPoQg==}
     engines: {node: '>= 12'}
     hasBin: true
@@ -2602,7 +2602,7 @@ packages:
         optional: true
     dependencies:
       vue-demi: 0.14.6(vue@2.7.16)
-      vue-router: 3.6.5(vue@2.7.16)
+      vue-router: 4.4.5(vue@2.7.16)
     transitivePeerDependencies:
       - vue
     dev: false
@@ -3284,7 +3284,7 @@ packages:
       - encoding
     dev: true
 
-  /@nuxt/test-utils@3.10.0(@vitest/ui@1.2.2)(h3@1.10.1)(jsdom@24.0.0)(rollup@3.29.4)(vite@5.0.12)(vitest@1.2.2)(vue-router@3.6.5)(vue@2.7.16):
+  /@nuxt/test-utils@3.10.0(@vitest/ui@1.2.2)(h3@1.10.1)(jsdom@24.0.0)(rollup@3.29.4)(vite@5.0.12)(vitest@1.2.2)(vue-router@4.4.5)(vue@2.7.16):
     resolution: {integrity: sha512-9ZKKrccCUyZP0P9/BdTNHWwTRvIbBnrmDvqvO0dQpTiUhgDVeO1vdG40o4e4olw7sbzUP51C8uA0OkRur/zBvQ==}
     engines: {node: ^14.18.0 || >=16.10.0}
     peerDependencies:
@@ -3348,9 +3348,9 @@ packages:
       unplugin: 1.6.0
       vite: 5.0.12(@types/node@20.11.10)(terser@5.27.0)
       vitest: 1.2.2(@types/node@20.11.10)(@vitest/ui@1.2.2)(jsdom@24.0.0)
-      vitest-environment-nuxt: 1.0.0(@vitest/ui@1.2.2)(h3@1.10.1)(jsdom@24.0.0)(rollup@3.29.4)(vite@5.0.12)(vitest@1.2.2)(vue-router@3.6.5)(vue@2.7.16)
+      vitest-environment-nuxt: 1.0.0(@vitest/ui@1.2.2)(h3@1.10.1)(jsdom@24.0.0)(rollup@3.29.4)(vite@5.0.12)(vitest@1.2.2)(vue-router@4.4.5)(vue@2.7.16)
       vue: 2.7.16
-      vue-router: 3.6.5(vue@2.7.16)
+      vue-router: 4.4.5(vue@2.7.16)
     transitivePeerDependencies:
       - rollup
       - supports-color
@@ -4652,6 +4652,9 @@ packages:
   /@vue/devtools-api@6.5.1:
     resolution: {integrity: sha512-+KpckaAQyfbvshdDW5xQylLni1asvNSGme1JFs8I1+/H5pHEhqUKMEQD/qn3Nx5+/nycBq11qAEi8lk+LXI2dA==}
     dev: false
+
+  /@vue/devtools-api@6.6.4:
+    resolution: {integrity: sha512-sGhTPMuXqZ1rVOk32RylztWkfXTRhuS7vgAKv0zjqk8gbsHkJ7xfFf+jbySxt7tWObEJwyKaHMikV/WGDiQm8g==}
 
   /@webassemblyjs/ast@1.11.6:
     resolution: {integrity: sha512-IN1xI7PwOvLPgjcf180gC1bqn3q/QaOCwYUahIOhbYUu8KA/3tw2RT/T0Gidi1l7Hhj5D/INhJxiICObqpMu4Q==}
@@ -13697,10 +13700,10 @@ packages:
       fsevents: 2.3.3
     dev: true
 
-  /vitest-environment-nuxt@1.0.0(@vitest/ui@1.2.2)(h3@1.10.1)(jsdom@24.0.0)(rollup@3.29.4)(vite@5.0.12)(vitest@1.2.2)(vue-router@3.6.5)(vue@2.7.16):
+  /vitest-environment-nuxt@1.0.0(@vitest/ui@1.2.2)(h3@1.10.1)(jsdom@24.0.0)(rollup@3.29.4)(vite@5.0.12)(vitest@1.2.2)(vue-router@4.4.5)(vue@2.7.16):
     resolution: {integrity: sha512-AWMO9h4HdbaFdPWZw34gALFI8gbBiOpvfbyeZwHIPfh4kWg/TwElYHvYMQ61WPUlCGaS5LebfHkaI0WPyb//Iw==}
     dependencies:
-      '@nuxt/test-utils': 3.10.0(@vitest/ui@1.2.2)(h3@1.10.1)(jsdom@24.0.0)(rollup@3.29.4)(vite@5.0.12)(vitest@1.2.2)(vue-router@3.6.5)(vue@2.7.16)
+      '@nuxt/test-utils': 3.10.0(@vitest/ui@1.2.2)(h3@1.10.1)(jsdom@24.0.0)(rollup@3.29.4)(vite@5.0.12)(vitest@1.2.2)(vue-router@4.4.5)(vue@2.7.16)
     transitivePeerDependencies:
       - '@cucumber/cucumber'
       - '@jest/globals'
@@ -13847,7 +13850,7 @@ packages:
       - vue
     dev: false
 
-  /vue-i18n-routing@1.2.0(vue-i18n-bridge@9.9.0)(vue-i18n@8.28.2)(vue-router@3.6.5)(vue@2.7.16):
+  /vue-i18n-routing@1.2.0(vue-i18n-bridge@9.9.0)(vue-i18n@8.28.2)(vue-router@4.4.5)(vue@2.7.16):
     resolution: {integrity: sha512-pn+bIFRMX5BN1BVQJ5rn05dYVnBhU/QnkxhjEJAe9HnYtJhDubetvoY+yfgDNWwesNWfHbbvsilsgSGL6DJyeA==}
     engines: {node: '>= 14.6'}
     peerDependencies:
@@ -13870,13 +13873,13 @@ packages:
     dependencies:
       '@intlify/shared': 9.9.0
       '@intlify/vue-i18n-bridge': 1.1.0(vue-i18n-bridge@9.9.0)(vue-i18n@8.28.2)
-      '@intlify/vue-router-bridge': 1.1.0(vue-router@3.6.5)(vue@2.7.16)
+      '@intlify/vue-router-bridge': 1.1.0(vue-router@4.4.5)(vue@2.7.16)
       ufo: 1.3.2
       vue: 2.7.16
       vue-demi: 0.14.6(vue@2.7.16)
       vue-i18n: 8.28.2(vue@2.7.16)
       vue-i18n-bridge: 9.9.0(vue@2.7.16)
-      vue-router: 3.6.5(vue@2.7.16)
+      vue-router: 4.4.5(vue@2.7.16)
     dev: false
 
   /vue-i18n@8.28.2(vue@2.7.16):
@@ -13986,6 +13989,15 @@ packages:
     peerDependencies:
       vue: ^2
     dependencies:
+      vue: 2.7.16
+    dev: true
+
+  /vue-router@4.4.5(vue@2.7.16):
+    resolution: {integrity: sha512-4fKZygS8cH1yCyuabAXGUAsyi1b2/o/OKgu/RUb+znIYOxPRxdkytJEx+0wGcpBE1pX6vUgh5jwWOKRGvuA/7Q==}
+    peerDependencies:
+      vue: ^3.2.0
+    dependencies:
+      '@vue/devtools-api': 6.6.4
       vue: 2.7.16
 
   /vue-server-renderer@2.7.16:
