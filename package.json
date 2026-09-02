@@ -47,7 +47,7 @@
     "@nuxt/module-builder": "0.5.5",
     "@nuxt/schema": "3.9.3",
     "@nuxt/test-utils": "3.10.0",
-    "@types/node": "^20.11.10",
+    "@types/node": "^24.13.3",
     "@vitejs/plugin-vue2": "^2.3.1",
     "@vitest/ui": "1.2.2",
     "changelogen": "^0.5.5",
