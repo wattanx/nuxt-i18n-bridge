@@ -53,7 +53,7 @@ importers:
         version: 3.9.3(rollup@3.29.4)
       '@nuxt/test-utils':
         specifier: 3.10.0
-        version: 3.10.0(@vitest/ui@1.2.2)(h3@1.10.1)(jsdom@24.0.0)(rollup@3.29.4)(vite@5.0.12)(vitest@1.2.2)(vue-router@3.6.5)(vue@2.7.16)
+        version: 3.10.0(@vitest/ui@5.0.0)(h3@1.10.1)(jsdom@24.0.0)(rollup@3.29.4)(vite@5.0.12)(vitest@1.2.2)(vue-router@3.6.5)(vue@2.7.16)
       '@types/node':
         specifier: ^20.11.10
         version: 20.11.10
@@ -61,8 +61,8 @@ importers:
         specifier: ^2.3.1
         version: 2.3.1(vite@5.0.12)(vue@2.7.16)
       '@vitest/ui':
-        specifier: 1.2.2
-        version: 1.2.2(vitest@1.2.2)
+        specifier: 5.0.0
+        version: 5.0.0(vitest@1.2.2)
       changelogen:
         specifier: ^0.5.5
         version: 0.5.5
@@ -77,7 +77,7 @@ importers:
         version: 2.0.0(typescript@5.3.3)
       vitest:
         specifier: 1.2.2
-        version: 1.2.2(@types/node@20.11.10)(@vitest/ui@1.2.2)(jsdom@24.0.0)
+        version: 1.2.2(@types/node@20.11.10)(@vitest/ui@5.0.0)(jsdom@24.0.0)
       vue:
         specifier: 2.7.16
         version: 2.7.16
@@ -3284,7 +3284,7 @@ packages:
       - encoding
     dev: true
 
-  /@nuxt/test-utils@3.10.0(@vitest/ui@1.2.2)(h3@1.10.1)(jsdom@24.0.0)(rollup@3.29.4)(vite@5.0.12)(vitest@1.2.2)(vue-router@3.6.5)(vue@2.7.16):
+  /@nuxt/test-utils@3.10.0(@vitest/ui@5.0.0)(h3@1.10.1)(jsdom@24.0.0)(rollup@3.29.4)(vite@5.0.12)(vitest@1.2.2)(vue-router@3.6.5)(vue@2.7.16):
     resolution: {integrity: sha512-9ZKKrccCUyZP0P9/BdTNHWwTRvIbBnrmDvqvO0dQpTiUhgDVeO1vdG40o4e4olw7sbzUP51C8uA0OkRur/zBvQ==}
     engines: {node: ^14.18.0 || >=16.10.0}
     peerDependencies:
@@ -3323,7 +3323,7 @@ packages:
     dependencies:
       '@nuxt/kit': 3.9.3(rollup@3.29.4)
       '@nuxt/schema': 3.9.3(rollup@3.29.4)
-      '@vitest/ui': 1.2.2(vitest@1.2.2)
+      '@vitest/ui': 5.0.0(vitest@1.2.2)
       c12: 1.6.1
       consola: 3.2.3
       defu: 6.1.4
@@ -3347,8 +3347,8 @@ packages:
       unenv: 1.9.0
       unplugin: 1.6.0
       vite: 5.0.12(@types/node@20.11.10)(terser@5.27.0)
-      vitest: 1.2.2(@types/node@20.11.10)(@vitest/ui@1.2.2)(jsdom@24.0.0)
-      vitest-environment-nuxt: 1.0.0(@vitest/ui@1.2.2)(h3@1.10.1)(jsdom@24.0.0)(rollup@3.29.4)(vite@5.0.12)(vitest@1.2.2)(vue-router@3.6.5)(vue@2.7.16)
+      vitest: 1.2.2(@types/node@20.11.10)(@vitest/ui@5.0.0)(jsdom@24.0.0)
+      vitest-environment-nuxt: 1.0.0(@vitest/ui@5.0.0)(h3@1.10.1)(jsdom@24.0.0)(rollup@3.29.4)(vite@5.0.12)(vitest@1.2.2)(vue-router@3.6.5)(vue@2.7.16)
       vue: 2.7.16
       vue-router: 3.6.5(vue@2.7.16)
     transitivePeerDependencies:
@@ -4425,6 +4425,12 @@ packages:
       chai: 4.3.10
     dev: true
 
+  /@vitest/pretty-format@5.0.0:
+    resolution: {integrity: sha512-PVRNuB3wpReb4SQEs4zTKM4KWFhQ5pw3spE8naoDJNB5T5aWRzGKHwXcLUllr0WeOTXpB6bSr3CJLo5+7XQSSQ==}
+    dependencies:
+      tinyrainbow: 3.1.1
+    dev: true
+
   /@vitest/runner@1.2.2:
     resolution: {integrity: sha512-JctG7QZ4LSDXr5CsUweFgcpEvrcxOV1Gft7uHrvkQ+fsAVylmWQvnaAr/HDp3LAH1fztGMQZugIheTWjaGzYIg==}
     dependencies:
@@ -4447,19 +4453,18 @@ packages:
       tinyspy: 2.2.0
     dev: true
 
-  /@vitest/ui@1.2.2(vitest@1.2.2):
-    resolution: {integrity: sha512-CG+5fa8lyoBr+9i+UZGS31Qw81v33QlD10uecHxN2CLJVN+jLnqx4pGzGvFFeJ7jSnUCT0AlbmVWY6fU6NJZmw==}
+  /@vitest/ui@5.0.0(vitest@1.2.2):
+    resolution: {integrity: sha512-h2FIFwggCY2GxUd2UdQoYNVQkOIqEQLPhNREcl3FUiRsdzQep7NWwYbSmhGEA9nFLPDq5pXzRMcBZQU8Py83sg==}
     peerDependencies:
-      vitest: ^1.0.0
+      vitest: 5.0.0
     dependencies:
-      '@vitest/utils': 1.2.2
-      fast-glob: 3.3.2
-      fflate: 0.8.1
-      flatted: 3.2.9
-      pathe: 1.1.2
-      picocolors: 1.0.0
-      sirv: 2.0.4
-      vitest: 1.2.2(@types/node@20.11.10)(@vitest/ui@1.2.2)(jsdom@24.0.0)
+      '@vitest/utils': 5.0.0
+      fflate: 0.8.3
+      flatted: 3.4.4
+      pathe: 2.0.3
+      sirv: 3.0.2
+      tinyrainbow: 3.1.1
+      vitest: 1.2.2(@types/node@20.11.10)(@vitest/ui@5.0.0)(jsdom@24.0.0)
     dev: true
 
   /@vitest/utils@1.2.2:
@@ -4469,6 +4474,14 @@ packages:
       estree-walker: 3.0.3
       loupe: 2.3.7
       pretty-format: 29.7.0
+    dev: true
+
+  /@vitest/utils@5.0.0:
+    resolution: {integrity: sha512-dO++xL3vDfvhTAVimfkuQUA3k+JClIF1i1vAkPqpcGAthRmeWnXmHB7YPViPvgCwviX8u7Y5W1u2N//AaQr3fw==}
+    dependencies:
+      '@vitest/pretty-format': 5.0.0
+      convert-source-map: 2.0.0
+      tinyrainbow: 3.1.1
     dev: true
 
   /@vue/babel-helper-vue-jsx-merge-props@1.4.0:
@@ -4908,6 +4921,7 @@ packages:
 
   /acorn-import-assertions@1.9.0(acorn@8.11.3):
     resolution: {integrity: sha512-cmMwop9x+8KFhxvKrKfPYmN6/pKTYYHBqLa0DfvVZcKMJWNyWLnaqND7dx/qn66R7ewM1UX5XMaDVP5wlVTaVA==}
+    deprecated: package has been renamed to acorn-import-attributes
     peerDependencies:
       acorn: ^8
     dependencies:
@@ -7644,8 +7658,8 @@ packages:
       web-streams-polyfill: 3.3.2
     dev: true
 
-  /fflate@0.8.1:
-    resolution: {integrity: sha512-/exOvEuc+/iaUm105QIiOt4LpBdMTWsXxqR0HDF35vx3fmaKzw7354gTilCh5rkzEt8WYyG//ku3h3nRmd7CHQ==}
+  /fflate@0.8.3:
+    resolution: {integrity: sha512-tbZNuJrLwGUp3zshBtdy4W+ORxZuIh8a5ilyIEQDC5rY1f3U20JMry0Ll3WBzU58EZKsEuJFXhb5gwv8CsPvgA==}
     dev: true
 
   /figgy-pudding@3.5.2:
@@ -7771,6 +7785,10 @@ packages:
     resolution: {integrity: sha512-36yxDn5H7OFZQla0/jFJmbIKTdZAQHngCedGxiMmpNfEZM0sdEeT+WczLQrjK6D7o2aiyLYDnkw0R3JK0Qv1RQ==}
     dev: true
 
+  /flatted@3.4.4:
+    resolution: {integrity: sha512-5+ybhBZANEJxaH3X5evAFatUxLfEHSr7n6kYJ+1Qd0mUqr4eu9gIf6GDbWHf8RJijHrjjO8G+la14SlL2SeS1Q==}
+    dev: true
+
   /flush-write-stream@1.1.1:
     resolution: {integrity: sha512-3Z4XhFZ3992uIq0XOqb9AreonueSYphE6oYbpt5+3u06JWklbsPkNv3ZKkP9Bz/r+1MWCaMoSQ28P85+1Yc77w==}
     dependencies:
@@ -7885,7 +7903,7 @@ packages:
     resolution: {integrity: sha512-oWb1Z6mkHIskLzEJ/XWX0srkpkTQ7vaopMQkyaEIoq0fmtFVxOthb8cCxeT+p3ynTdkk/RZwbgG4brR5BeWECw==}
     engines: {node: '>= 4.0'}
     os: [darwin]
-    deprecated: The v1 package contains DANGEROUS / INSECURE binaries. Upgrade to safe fsevents v2
+    deprecated: Upgrade to fsevents v2 to mitigate potential security issues
     requiresBuild: true
     dependencies:
       bindings: 1.5.0
@@ -8979,6 +8997,7 @@ packages:
 
   /js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
+    requiresBuild: true
 
   /js-yaml@3.14.1:
     resolution: {integrity: sha512-okMH7OXXJ7YrN9Ok3/SXrnu4iX9yOk+25nqX4imS2npuvTYDmo/QEZoqwZkYaIDk3jVvBOTOIEgEhaLOynBS9g==}
@@ -10506,6 +10525,10 @@ packages:
 
   /pathe@1.1.2:
     resolution: {integrity: sha512-whLdWMYL2TwI08hn8/ZqAbrVemu0LNaNNJZX73O6qaIdCTfXutsLhMkjdENX0qhsQ9uIimo4/aQOmXkoon2nDQ==}
+
+  /pathe@2.0.3:
+    resolution: {integrity: sha512-WUjGcAqP1gQacoQe+OBJsFA7Ld4DyXuUIjZ5cc75cLHvJ7dtNsTugphxIADwspS+AraAUePCKrSVtPLFj/F88w==}
+    dev: true
 
   /pathval@1.1.1:
     resolution: {integrity: sha512-Dp6zGqpTdETdR63lehJYPeIOqpiNBNtc7BpWSLrOje7UaIsE5aY92r/AunQA7rsXvet3lrJ3JnZX29UPTKXyKQ==}
@@ -12421,6 +12444,15 @@ packages:
       totalist: 3.0.1
     dev: true
 
+  /sirv@3.0.2:
+    resolution: {integrity: sha512-2wcC/oGxHis/BoHkkPwldgiPSYcpZK3JU28WoMVv55yHJgcZ8rlXvuG9iZggz+sU1d4bRgIGASwyWqjxu3FM0g==}
+    engines: {node: '>=18'}
+    dependencies:
+      '@polka/url': 1.0.0-next.24
+      mrmime: 2.0.0
+      totalist: 3.0.1
+    dev: true
+
   /slash@3.0.0:
     resolution: {integrity: sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==}
     engines: {node: '>=8'}
@@ -12993,6 +13025,11 @@ packages:
 
   /tinypool@0.8.2:
     resolution: {integrity: sha512-SUszKYe5wgsxnNOVlBYO6IC+8VGWdVGZWAqUxp3UErNBtptZvWbwyUOyzNL59zigz2rCA92QiL3wvG+JDSdJdQ==}
+    engines: {node: '>=14.0.0'}
+    dev: true
+
+  /tinyrainbow@3.1.1:
+    resolution: {integrity: sha512-yau8yJdTt989Mm0Bd/236QnzEiPf2xLLTqUZRUJOo/3CB078LSwzei343DgtJVmfJKJE3TMINY1u42SQsP6mXw==}
     engines: {node: '>=14.0.0'}
     dev: true
 
@@ -13697,10 +13734,10 @@ packages:
       fsevents: 2.3.3
     dev: true
 
-  /vitest-environment-nuxt@1.0.0(@vitest/ui@1.2.2)(h3@1.10.1)(jsdom@24.0.0)(rollup@3.29.4)(vite@5.0.12)(vitest@1.2.2)(vue-router@3.6.5)(vue@2.7.16):
+  /vitest-environment-nuxt@1.0.0(@vitest/ui@5.0.0)(h3@1.10.1)(jsdom@24.0.0)(rollup@3.29.4)(vite@5.0.12)(vitest@1.2.2)(vue-router@3.6.5)(vue@2.7.16):
     resolution: {integrity: sha512-AWMO9h4HdbaFdPWZw34gALFI8gbBiOpvfbyeZwHIPfh4kWg/TwElYHvYMQ61WPUlCGaS5LebfHkaI0WPyb//Iw==}
     dependencies:
-      '@nuxt/test-utils': 3.10.0(@vitest/ui@1.2.2)(h3@1.10.1)(jsdom@24.0.0)(rollup@3.29.4)(vite@5.0.12)(vitest@1.2.2)(vue-router@3.6.5)(vue@2.7.16)
+      '@nuxt/test-utils': 3.10.0(@vitest/ui@5.0.0)(h3@1.10.1)(jsdom@24.0.0)(rollup@3.29.4)(vite@5.0.12)(vitest@1.2.2)(vue-router@3.6.5)(vue@2.7.16)
     transitivePeerDependencies:
       - '@cucumber/cucumber'
       - '@jest/globals'
@@ -13719,7 +13756,7 @@ packages:
       - vue-router
     dev: true
 
-  /vitest@1.2.2(@types/node@20.11.10)(@vitest/ui@1.2.2)(jsdom@24.0.0):
+  /vitest@1.2.2(@types/node@20.11.10)(@vitest/ui@5.0.0)(jsdom@24.0.0):
     resolution: {integrity: sha512-d5Ouvrnms3GD9USIK36KG8OZ5bEvKEkITFtnGv56HFaSlbItJuYr7hv2Lkn903+AvRAgSixiamozUVfORUekjw==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -13749,7 +13786,7 @@ packages:
       '@vitest/runner': 1.2.2
       '@vitest/snapshot': 1.2.2
       '@vitest/spy': 1.2.2
-      '@vitest/ui': 1.2.2(vitest@1.2.2)
+      '@vitest/ui': 5.0.0(vitest@1.2.2)
       '@vitest/utils': 1.2.2
       acorn-walk: 8.3.2
       cac: 6.7.14
